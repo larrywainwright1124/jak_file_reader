@@ -5,7 +5,7 @@ CREATE PROCEDURE adjustment(p_xid          INT, p_amt DECIMAL(10, 2), p_source_i
   BEGIN
     DECLARE v_otb DECIMAL(10, 2);
     DECLARE v_bal_id INT;
-    DECLARE CONTINUE HANDLER FOR SQLEXCEPTION
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
     BEGIN
       ROLLBACK;
       SET p_resp_code = '01';
