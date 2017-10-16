@@ -120,7 +120,7 @@ class DbLoader:
         """
         
         tables['activyt'] = """
-            CREATE TABLE walgreens.activity (
+            CREATE TABLE IF NOT EXISTS activity (
               act_id INT NOT NULL AUTO_INCREMENT,
               act_type VARCHAR(5) NOT NULL,
               amount DECIMAL(10,2) NOT NULL,
@@ -130,7 +130,7 @@ class DbLoader:
               PRIMARY KEY (act_id))
             COMMENT = 'Used to store transactions against accounts';
         """
-        
+
         for key, sql in tables.iteritems():
             print 'creating ', key, ' if it does not exist'
             self.db.execute(sql)
