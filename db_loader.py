@@ -119,7 +119,7 @@ class DbLoader:
             COMMENT = 'Table is used to store transactions received via files, such as ACH.  ';
         """
         
-        tables['activyt'] = """
+        tables['activity'] = """
             CREATE TABLE IF NOT EXISTS activity (
               act_id INT NOT NULL AUTO_INCREMENT,
               act_type VARCHAR(5) NOT NULL,
