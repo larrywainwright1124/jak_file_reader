@@ -105,6 +105,7 @@ class DbLoader:
               trans_id INT NOT NULL AUTO_INCREMENT,
               trans_type VARCHAR(5) NOT NULL,
               account_nbr VARCHAR(20) NULL,
+              trans_date date null,
               in_ts DATETIME NULL,
               merch_name VARCHAR(25) NULL,
               merch_city VARCHAR(23) NULL,
@@ -251,6 +252,8 @@ class DbLoader:
         self.db.execute('truncate table ac_account')
         self.db.execute('truncate table ac_balance')
         self.db.execute('truncate table ac_card')
+        self.db.execute('truncate table tp_trans')
+        self.db.execute('truncate table activity')
 
         # loop TOTAL_RECORD times and create dummy data.
         # Notice the weird crap in the values string on insert statements.
