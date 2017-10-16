@@ -1,0 +1,70 @@
+header record - total chars 42
+000010 - total records 6 chars
+000002 - 6 chars total debits against customer accounts
+000008 - 6 chars total payments to customer accounts
+000000014567 - 12 chars total debits against customer accounts
+000000009544 - 12 chars total payments to customer accounts
+
+data records 1 to many, total chars per record 100
+000001 - record index 6 chars
+520 - transaction type..520,522,527 debit against customer account
+                        620,622,627 payment to customer account
+1234567890123456 - 16 chars account number
+20171001 - 8 chars transaction date convert into datetime
+Merchant Name Here - 25 chars
+Merchant City - 23 chars
+Merchant State - 10
+12345 - Acquiring Id - 5 chars
+000000002500 - 12 chars transaction amount in pennies - convert to decimal type
+
+
+First task:
+======================
+I hope you have downloaded and installed the mysql drivers for python.  If not, I got it from here:
+https://dev.mysql.com/downloads/connector/python/
+
+Use db_loader.py.  It will create a database and tables that you will need.  It assumes much.  First that the
+database server is available (mysql) and that it is on the standard port (3306) and accessible via localhost.
+The code uses the user: root and password: root to gain full access.  It will connect to the database: sys and
+attempt to create a database named walgreens.  The it switches to the walgreens database and creates tables,
+if they don't exist.  After doing all that, it will then populate the database tables with random data.
+
+Next you will run: file_build.py.  This will create the file you've looked at before named: thefile.txt.
+
+I put some comments in both file_build.py and db_loader.py for you to pay attention to regarding a few python
+and mysql features that you should become familiar with.
+
+Your actual task will be, once the above is working, is this:
+Create a python script that is given a file name at the command line that it will parse and load into the
+tp_trans table.  Most of the fields are one to one matches with content in the file (thefile.txt).
+You will also set the status of each record as you add them to a value of 'N'
+
+
+Second task:
+==================================
+This will be, by far, the hardest as it is going to be something you have never done.  You will be creating
+stored procedures in mysql.
+
+The first will be called adjustment and it is used to take money away from an account.
+It will take an xid and an amount, and if there is enough ac_balance.open_to_buy, subtract that amount from
+open_to_buy and write a record into the activity table with a type of 'ADJ' and the amount along with the
+other fields.  The procedure will return, via an out parameter, whether it succeeded '00', '02' if there were
+not enough funds to cover the transaction or '01' if something went wrong.
+
+The second will be called payment and it is used to put money into an account.
+It will take an xid and amount and add it to ac_balance.open_to_buy.  It will then write a record into the
+activity table with a type of 'PMT' and the amount along with the other fields.  The procedure will return,
+via an out parameter, whether it succeeded '00' or failed '01'.
+
+I'm going to write these procedures myself and update db.py to call SPs so you won't have to work that out but
+I haven't got there yet.
+
+Third task:
+======================================
+Create another python script that will read each tp_trans record that has a status of 'N'.
+Then, depending on the trans_type, it will call either the adjustment or the payment stored procedure and
+if the call is successful, it will mark the record in the table with a status of 'P' for processed, 'R' for
+retry if an adjustment returned a '02' or 'E' if the procedure returned a '01'.
+
+
+These tasks are very representative, in a simplified way, of just one of the things we do at work.
