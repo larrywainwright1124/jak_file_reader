@@ -58,7 +58,7 @@ class DbLoader:
               bal_id INT NOT NULL DEFAULT 0,
               client_id INT NOT NULL DEFAULT 0,
               status VARCHAR(1) NOT NULL DEFAULT 'N',
-              PRIMARY KEY (`xid`))
+              PRIMARY KEY (xid))
             ENGINE = InnoDB
             DEFAULT CHARACTER SET = utf8
         """
@@ -68,7 +68,7 @@ class DbLoader:
               bal_id INT NOT NULL AUTO_INCREMENT,
               open_to_buy DECIMAL(10,2) NOT NULL DEFAULT 0,
               cred_lim DECIMAL(10,2) NOT NULL DEFAULT 0,
-              PRIMARY KEY (`bal_id`))
+              PRIMARY KEY (bal_id))
             ENGINE = InnoDB
             DEFAULT CHARACTER SET = utf8
         """
@@ -118,6 +118,19 @@ class DbLoader:
               PRIMARY KEY (trans_id))
             COMMENT = 'Table is used to store transactions received via files, such as ACH.  ';
         """
+        
+        tables['activyt'] = """
+            CREATE TABLE walgreens.activity (
+              act_id INT NOT NULL AUTO_INCREMENT,
+              act_type VARCHAR(5) NOT NULL,
+              amount DECIMAL(10,2) NOT NULL,
+              in_ts DATETIME NULL,
+              source_id INT NULL,
+              source_table VARCHAR(45) NULL,
+              PRIMARY KEY (act_id))
+            COMMENT = 'Used to store transactions against accounts';
+        """
+        
         for key, sql in tables.iteritems():
             print 'creating ', key, ' if it does not exist'
             self.db.execute(sql)

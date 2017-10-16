@@ -30,7 +30,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="specs.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="specs.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/specs.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="815">
@@ -50,28 +50,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db_loader.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="db_loader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="121" column="58" lean-forward="false" selection-start-line="121" selection-start-column="58" selection-end-line="121" selection-end-column="58" />
+            <state relative-caret-position="530">
+              <caret line="132" column="8" lean-forward="false" selection-start-line="132" selection-start-column="8" selection-end-line="132" selection-end-column="8" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
-                <marker date="1508172683881" expanded="true" signature="1832:1910" ph="CREATE DATAB... walgreens" />
-                <marker date="1508172683881" expanded="true" signature="1872:1910" ph="/*!40100 DEF... " />
-                <marker date="1508172683881" expanded="true" signature="2208:2546" ph="CREATE TABLE... IF" />
-                <marker date="1508172683881" expanded="true" signature="2607:2920" ph="CREATE TABLE... IF" />
-                <marker date="1508172683881" expanded="true" signature="2978:3353" ph="CREATE TABLE... IF" />
-                <marker date="1508172683881" expanded="true" signature="3414:3875" ph="CREATE TABLE... IF" />
-                <marker date="1508172683881" expanded="true" signature="3934:4636" ph="CREATE TABLE... tp_trans" />
-                <marker date="1508172683881" expanded="true" signature="7900:7924" ph="truncate tab... " />
-                <marker date="1508172683881" expanded="true" signature="7952:7977" ph="truncate tab... " />
-                <marker date="1508172683881" expanded="true" signature="8005:8030" ph="truncate tab... " />
-                <marker date="1508172683881" expanded="true" signature="8058:8080" ph="truncate tab... " />
-                <marker date="1508172683881" expanded="true" signature="8569:8717" ph="INSERT INTO ac_client... " />
-                <marker date="1508172683881" expanded="true" signature="9345:9446" ph="INSERT INTO ac_balance... " />
-                <marker date="1508172683881" expanded="true" signature="9720:9833" ph="INSERT INTO ac_account... " />
-                <marker date="1508172683881" expanded="true" signature="10884:11032" ph="INSERT INTO ac_card... " />
+                <marker date="1508176948335" expanded="true" signature="1832:1910" ph="CREATE DATAB... walgreens" />
+                <marker date="1508176948335" expanded="true" signature="1872:1910" ph="/*!40100 DEF... " />
+                <marker date="1508176948335" expanded="true" signature="2208:2470" ph="CREATE TABLE... IF" />
+                <marker date="1508176948335" expanded="true" signature="2208:2544" ph="CREATE TABLE... ac_account" />
+                <marker date="1508176948335" expanded="true" signature="2605:2916" ph="CREATE TABLE... ac_balance" />
+                <marker date="1508176948335" expanded="true" signature="2974:3349" ph="CREATE TABLE... ac_card" />
+                <marker date="1508176948335" expanded="true" signature="3410:3871" ph="CREATE TABLE... ac_client" />
+                <marker date="1508176948335" expanded="true" signature="3930:4632" ph="CREATE TABLE... tp_trans" />
+                <marker date="1508176948335" expanded="true" signature="4699:5089" ph="CREATE TABLE... activity" />
+                <marker date="1508176948335" expanded="true" signature="5019:5089" ph="CREATE TABLE... activity" />
+                <marker date="1508176948335" expanded="true" signature="8362:8386" ph="truncate tab... " />
+                <marker date="1508176948335" expanded="true" signature="8414:8439" ph="truncate tab... " />
+                <marker date="1508176948335" expanded="true" signature="8467:8492" ph="truncate tab... " />
+                <marker date="1508176948335" expanded="true" signature="8520:8542" ph="truncate tab... " />
+                <marker date="1508176948335" expanded="true" signature="9031:9179" ph="INSERT INTO ac_client... " />
+                <marker date="1508176948335" expanded="true" signature="9807:9908" ph="INSERT INTO ac_balance... " />
+                <marker date="1508176948335" expanded="true" signature="10182:10295" ph="INSERT INTO ac_account... " />
+                <marker date="1508176948335" expanded="true" signature="11346:11494" ph="INSERT INTO ac_card... " />
               </folding>
             </state>
           </provider>
@@ -125,8 +128,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>`</find>
       <find>print</find>
+      <find>`</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -136,11 +139,11 @@
         <option value="$PROJECT_DIR$/db_test.py" />
         <option value="$PROJECT_DIR$/female-first-names.txt" />
         <option value="$PROJECT_DIR$/get_first_names.py" />
-        <option value="$PROJECT_DIR$/db_loader.py" />
         <option value="$PROJECT_DIR$/db.py" />
         <option value="$PROJECT_DIR$/file_build.py" />
         <option value="$PROJECT_DIR$/database.sql" />
         <option value="$PROJECT_DIR$/specs.txt" />
+        <option value="$PROJECT_DIR$/db_loader.py" />
       </list>
     </option>
   </component>
@@ -549,9 +552,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="33" width="1910" height="1014" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972972" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972972" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -693,36 +696,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="121" column="58" lean-forward="false" selection-start-line="121" selection-start-column="58" selection-end-line="121" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-            <marker date="1508172683881" expanded="true" signature="1832:1910" ph="CREATE DATAB... walgreens" />
-            <marker date="1508172683881" expanded="true" signature="1872:1910" ph="/*!40100 DEF... " />
-            <marker date="1508172683881" expanded="true" signature="2208:2546" ph="CREATE TABLE... IF" />
-            <marker date="1508172683881" expanded="true" signature="2607:2920" ph="CREATE TABLE... IF" />
-            <marker date="1508172683881" expanded="true" signature="2978:3353" ph="CREATE TABLE... IF" />
-            <marker date="1508172683881" expanded="true" signature="3414:3875" ph="CREATE TABLE... IF" />
-            <marker date="1508172683881" expanded="true" signature="3934:4636" ph="CREATE TABLE... tp_trans" />
-            <marker date="1508172683881" expanded="true" signature="7900:7924" ph="truncate tab... " />
-            <marker date="1508172683881" expanded="true" signature="7952:7977" ph="truncate tab... " />
-            <marker date="1508172683881" expanded="true" signature="8005:8030" ph="truncate tab... " />
-            <marker date="1508172683881" expanded="true" signature="8058:8080" ph="truncate tab... " />
-            <marker date="1508172683881" expanded="true" signature="8569:8717" ph="INSERT INTO ac_client... " />
-            <marker date="1508172683881" expanded="true" signature="9345:9446" ph="INSERT INTO ac_balance... " />
-            <marker date="1508172683881" expanded="true" signature="9720:9833" ph="INSERT INTO ac_account... " />
-            <marker date="1508172683881" expanded="true" signature="10884:11032" ph="INSERT INTO ac_card... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specs.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="815">
           <caret line="69" column="98" lean-forward="false" selection-start-line="69" selection-start-column="98" selection-end-line="69" selection-end-column="98" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="132" column="8" lean-forward="false" selection-start-line="132" selection-start-column="8" selection-end-line="132" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <marker date="1508176948335" expanded="true" signature="1832:1910" ph="CREATE DATAB... walgreens" />
+            <marker date="1508176948335" expanded="true" signature="1872:1910" ph="/*!40100 DEF... " />
+            <marker date="1508176948335" expanded="true" signature="2208:2470" ph="CREATE TABLE... IF" />
+            <marker date="1508176948335" expanded="true" signature="2208:2544" ph="CREATE TABLE... ac_account" />
+            <marker date="1508176948335" expanded="true" signature="2605:2916" ph="CREATE TABLE... ac_balance" />
+            <marker date="1508176948335" expanded="true" signature="2974:3349" ph="CREATE TABLE... ac_card" />
+            <marker date="1508176948335" expanded="true" signature="3410:3871" ph="CREATE TABLE... ac_client" />
+            <marker date="1508176948335" expanded="true" signature="3930:4632" ph="CREATE TABLE... tp_trans" />
+            <marker date="1508176948335" expanded="true" signature="4699:5089" ph="CREATE TABLE... activity" />
+            <marker date="1508176948335" expanded="true" signature="5019:5089" ph="CREATE TABLE... activity" />
+            <marker date="1508176948335" expanded="true" signature="8362:8386" ph="truncate tab... " />
+            <marker date="1508176948335" expanded="true" signature="8414:8439" ph="truncate tab... " />
+            <marker date="1508176948335" expanded="true" signature="8467:8492" ph="truncate tab... " />
+            <marker date="1508176948335" expanded="true" signature="8520:8542" ph="truncate tab... " />
+            <marker date="1508176948335" expanded="true" signature="9031:9179" ph="INSERT INTO ac_client... " />
+            <marker date="1508176948335" expanded="true" signature="9807:9908" ph="INSERT INTO ac_balance... " />
+            <marker date="1508176948335" expanded="true" signature="10182:10295" ph="INSERT INTO ac_account... " />
+            <marker date="1508176948335" expanded="true" signature="11346:11494" ph="INSERT INTO ac_card... " />
+          </folding>
         </state>
       </provider>
     </entry>
