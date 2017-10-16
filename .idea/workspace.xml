@@ -13,6 +13,7 @@
     <SUITE FILE_PATH="coverage/jak_file_reader$db_loader.coverage" NAME="db_loader Coverage Results" MODIFIED="1508170329334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/jak_file_reader$get_first_names.coverage" NAME="get_first_names Coverage Results" MODIFIED="1508170052275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/jak_file_reader$db.coverage" NAME="db Coverage Results" MODIFIED="1508146698683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/jak_file_reader$tester.coverage" NAME="tester Coverage Results" MODIFIED="1508182872306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/jak_file_reader$db_test.coverage" NAME="db_test Coverage Results" MODIFIED="1508065796518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/jak_file_reader$file_build.coverage" NAME="file_build Coverage Results" MODIFIED="1508173565101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/jak_file_reader$stuff.coverage" NAME="stuff Coverage Results" MODIFIED="1508181044941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -41,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sp_adjustment.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sp_adjustment.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql/sp_adjustment.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
@@ -93,14 +94,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="db.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
-              <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+            <state relative-caret-position="168">
+              <caret line="138" column="47" lean-forward="false" selection-start-line="138" selection-start-column="47" selection-end-line="138" selection-end-column="47" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tester.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tester.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="62" lean-forward="false" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -153,7 +164,6 @@
         <option value="$PROJECT_DIR$/specs.txt" />
         <option value="$PROJECT_DIR$/database.sql" />
         <option value="$PROJECT_DIR$/get_first_names.py" />
-        <option value="$PROJECT_DIR$/db.py" />
         <option value="$PROJECT_DIR$/file_build.py" />
         <option value="$PROJECT_DIR$/data/adjectives.txt" />
         <option value="$PROJECT_DIR$/data/female_first_names.dat" />
@@ -165,6 +175,8 @@
         <option value="$PROJECT_DIR$/data/verbs.txt" />
         <option value="$PROJECT_DIR$/stuff.py" />
         <option value="$PROJECT_DIR$/sql/sp_adjustment.sql" />
+        <option value="$PROJECT_DIR$/tester.py" />
+        <option value="$PROJECT_DIR$/db.py" />
       </list>
     </option>
   </component>
@@ -253,7 +265,7 @@
       <recent name="C:\Users\larry\PycharmProjects\jak_file_reader\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.stuff">
+  <component name="RunManager" selected="Python.tester">
     <configuration default="false" name="file_build" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,24 +302,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="db" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jak_file_reader" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="get_first_names" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -340,6 +334,24 @@
       <module name="jak_file_reader" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stuff.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tester" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jak_file_reader" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tester.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -555,17 +567,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.file_build" />
       <item index="1" class="java.lang.String" itemvalue="Python.db_loader" />
-      <item index="2" class="java.lang.String" itemvalue="Python.db" />
-      <item index="3" class="java.lang.String" itemvalue="Python.get_first_names" />
-      <item index="4" class="java.lang.String" itemvalue="Python.stuff" />
+      <item index="2" class="java.lang.String" itemvalue="Python.get_first_names" />
+      <item index="3" class="java.lang.String" itemvalue="Python.stuff" />
+      <item index="4" class="java.lang.String" itemvalue="Python.tester" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.stuff" />
-        <item index="1" class="java.lang.String" itemvalue="Python.file_build" />
-        <item index="2" class="java.lang.String" itemvalue="Python.db_loader" />
-        <item index="3" class="java.lang.String" itemvalue="Python.get_first_names" />
-        <item index="4" class="java.lang.String" itemvalue="Python.db" />
+        <item index="0" class="java.lang.String" itemvalue="Python.tester" />
+        <item index="1" class="java.lang.String" itemvalue="Python.stuff" />
+        <item index="2" class="java.lang.String" itemvalue="Python.file_build" />
+        <item index="3" class="java.lang.String" itemvalue="Python.db_loader" />
+        <item index="4" class="java.lang.String" itemvalue="Python.get_first_names" />
       </list>
     </recent_temporary>
   </component>
@@ -595,7 +607,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30987513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30987513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291714" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -652,59 +664,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="121" column="24" lean-forward="false" selection-start-line="121" selection-start-column="24" selection-end-line="121" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-            <marker date="1508178249056" expanded="true" signature="1832:1910" ph="CREATE DATAB... walgreens" />
-            <marker date="1508178249056" expanded="true" signature="1872:1910" ph="/*!40100 DEF... " />
-            <marker date="1508178249056" expanded="true" signature="2208:2470" ph="CREATE TABLE... IF" />
-            <marker date="1508178249056" expanded="true" signature="2208:2544" ph="CREATE TABLE... ac_account" />
-            <marker date="1508178249056" expanded="true" signature="2605:2916" ph="CREATE TABLE... ac_balance" />
-            <marker date="1508178249056" expanded="true" signature="2974:3349" ph="CREATE TABLE... ac_card" />
-            <marker date="1508178249056" expanded="true" signature="3410:3871" ph="CREATE TABLE... ac_client" />
-            <marker date="1508178249056" expanded="true" signature="3930:4632" ph="CREATE TABLE... tp_trans" />
-            <marker date="1508178249056" expanded="true" signature="4700:5094" ph="CREATE TABLE... activity" />
-            <marker date="1508178249056" expanded="true" signature="5024:5094" ph="CREATE TABLE... activity" />
-            <marker date="1508178249056" expanded="true" signature="8359:8383" ph="truncate tab... " />
-            <marker date="1508178249056" expanded="true" signature="8411:8436" ph="truncate tab... " />
-            <marker date="1508178249056" expanded="true" signature="8464:8489" ph="truncate tab... " />
-            <marker date="1508178249056" expanded="true" signature="8517:8539" ph="truncate tab... " />
-            <marker date="1508178249056" expanded="true" signature="9028:9176" ph="INSERT INTO ac_client... " />
-            <marker date="1508178249056" expanded="true" signature="9804:9905" ph="INSERT INTO ac_balance... " />
-            <marker date="1508178249056" expanded="true" signature="10179:10292" ph="INSERT INTO ac_account... " />
-            <marker date="1508178249056" expanded="true" signature="11343:11491" ph="INSERT INTO ac_card... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/py.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_first_names.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <element signature="e#190#199#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -799,11 +763,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="121" column="24" lean-forward="false" selection-start-line="121" selection-start-column="24" selection-end-line="121" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <marker date="1508178249056" expanded="true" signature="1832:1910" ph="CREATE DATAB... walgreens" />
+            <marker date="1508178249056" expanded="true" signature="1872:1910" ph="/*!40100 DEF... " />
+            <marker date="1508178249056" expanded="true" signature="2208:2470" ph="CREATE TABLE... IF" />
+            <marker date="1508178249056" expanded="true" signature="2208:2544" ph="CREATE TABLE... ac_account" />
+            <marker date="1508178249056" expanded="true" signature="2605:2916" ph="CREATE TABLE... ac_balance" />
+            <marker date="1508178249056" expanded="true" signature="2974:3349" ph="CREATE TABLE... ac_card" />
+            <marker date="1508178249056" expanded="true" signature="3410:3871" ph="CREATE TABLE... ac_client" />
+            <marker date="1508178249056" expanded="true" signature="3930:4632" ph="CREATE TABLE... tp_trans" />
+            <marker date="1508178249056" expanded="true" signature="4700:5094" ph="CREATE TABLE... activity" />
+            <marker date="1508178249056" expanded="true" signature="5024:5094" ph="CREATE TABLE... activity" />
+            <marker date="1508178249056" expanded="true" signature="8359:8383" ph="truncate tab... " />
+            <marker date="1508178249056" expanded="true" signature="8411:8436" ph="truncate tab... " />
+            <marker date="1508178249056" expanded="true" signature="8464:8489" ph="truncate tab... " />
+            <marker date="1508178249056" expanded="true" signature="8517:8539" ph="truncate tab... " />
+            <marker date="1508178249056" expanded="true" signature="9028:9176" ph="INSERT INTO ac_client... " />
+            <marker date="1508178249056" expanded="true" signature="9804:9905" ph="INSERT INTO ac_balance... " />
+            <marker date="1508178249056" expanded="true" signature="10179:10292" ph="INSERT INTO ac_account... " />
+            <marker date="1508178249056" expanded="true" signature="11343:11491" ph="INSERT INTO ac_card... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_first_names.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="e#190#199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sql/sp_adjustment.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="62" lean-forward="false" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="138" column="47" lean-forward="false" selection-start-line="138" selection-start-column="47" selection-end-line="138" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

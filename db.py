@@ -127,3 +127,28 @@ class DB:
             except mysql.connector.Error as err:
                 print err.msg
         return result
+
+    def proc(self, proc_name, args):
+        """
+        This method kind of sucks.  It requires the arguments to be in a tuple which, in this case,
+        would be the parameters to the procedure wrapped in (), so if u were calling adjustment:
+        (1, 55.67, 1, 'tp_trans', '--')
+        You get back that same list with the out parameter changed would would be referenced in the returned
+        result like so:
+        result = db.proc('adjustment', (1, 55.67, 1, 'tp_trans', '--')
+        print result[4] => '00' or '01' or '02'
+        result[4] is the last value in the tuple and was passed in as '--'.  Tuples are referenced like arrays
+        with the first position being 0.
+        :param proc_name: Name of the procedure to call
+        :param args: Tuple of arguments in the same order as defined in the stored procedure.
+        :return: Tuple with same arguments but any that were defined as out will have a different value.
+        """
+        cursor = self.conn.cursor()
+        result_args = None
+        if cursor:
+            try:
+                result_args = cursor.callproc(proc_name, args)
+            except mysql.connector.Error as err:
+                print err.msg
+
+        return result_args
