@@ -13,12 +13,12 @@ data records 1 to many, total chars per record 100
 520 - transaction type..520,522,527 debit against customer account
                         620,622,627 payment to customer account
 1234567890123456 - 16 chars account number
-20171001 - 8 chars transaction date convert into datetime
+20171001 - 8 chars transaction date convert into datetime ex: datetime.strptime(dt, '%Y%m%d') read docs on strptime
 Merchant Name Here - 25 chars
 Merchant City - 23 chars
 Merchant State - 10
 12345 - Acquiring Id - 5 chars
-000000002500 - 12 chars transaction amount in pennies - convert to decimal type
+000000002500 - 12 chars transaction amount in pennies - convert to decimal type, seriously, use Decimal()
 
 
 First task:
