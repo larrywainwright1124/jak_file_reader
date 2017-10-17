@@ -74,7 +74,7 @@ class DataWriter:
         return str
 
     def get_state(self):
-        return self.states[randrange(0, len(self.states)-1)]
+        return '{:<10}'.format(self.states[randrange(0, len(self.states)-1)])
 
     def get_city(self):
         city = self.city[randrange(0, len(self.city)-1)]

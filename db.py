@@ -217,3 +217,12 @@ class DB:
                 print err.msg
 
         return result_args
+
+    def insert(self, tbl_name, key_vals):
+        vals = {}
+        ins_cols = ', '.join([key for key in key_vals])
+        ins_vals = ', '.join(['%(' + key + ')s' for key in key_vals])
+        insert_sql = "insert into {tbl} ({cols}) values ({vals})".format(tbl=tbl_name, cols=ins_cols,
+                                                                         vals=ins_vals)
+        id = self.execute(insert_sql, key_vals, True)
+        return id

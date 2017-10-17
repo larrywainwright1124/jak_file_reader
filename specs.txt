@@ -4,7 +4,10 @@ header record - total chars 42
 000008 - 6 chars total payments to customer accounts
 000000014567 - 12 chars total debits against customer accounts
 000000009544 - 12 chars total payments to customer accounts
-
+000150 000089 000061 000000529805 000000397421
+000010 000002 000008 000000014567 000000009544
+012345 678911 234567 892123456789 312345678941
+           0           0          0         0
 data records 1 to many, total chars per record 100
 000001 - record index 6 chars
 520 - transaction type..520,522,527 debit against customer account
