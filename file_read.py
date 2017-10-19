@@ -50,13 +50,9 @@ class Readheader:
             self.tAmount = int(self.tAmountRaw) * .01
             self.n = '\n'
 
-            record = [self.index, self.name, self.tType, self.accNum, self.date, self.city, self.state, self.acqCode, self.tAmount, self.n]
-            for item in record:
-                print (item)
-                i = i + 1
-
-
-
+            record = {'index':self.index,'name':self.name,'tType':self.tType,'accNum':self.accNum,'date':self.date,'city':self.city,'state':self.state,'acqCode':self.acqCode,'tAmount':self.tAmount,'n':self.n}
+            for key, value in record.iteritems():
+                print 'key: ', key, 'value: ', value
 
 
 
