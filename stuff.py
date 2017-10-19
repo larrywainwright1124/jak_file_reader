@@ -64,4 +64,20 @@ print '\nother technique (and more commonly used):'
 for key, value in d.iteritems():
     print 'key: ', key, 'value: ', value
 
-
+class FileReader:
+    def __init__(self):
+        with file('thefile.txt', 'r') as f:
+            header = self.get_header_line(f)
+            line = self.get_record(f)
+            while line:
+                print line
+                line = self.get_record(f)
+                
+    def get_header_line(f):
+        line = f.read(35)
+        return line
+    
+    def get_record(f):
+        line = f.read(55)
+        return line
+    
