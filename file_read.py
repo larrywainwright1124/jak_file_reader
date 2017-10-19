@@ -44,7 +44,7 @@ class Readheader:
             self.date = datetime(year=int(self.dateRaw[0:4]), month=int(self.dateRaw[4:6]), day=int(self.dateRaw[6:8]))
             self.name = f.read(25)
             self.city = f.read(23)
-            self.state = f.read(2)
+            self.state = f.read(10)
             self.acqCode = f.read(5)
             self.tAmountRaw = f.read(12)
             self.tAmount = int(self.tAmountRaw) * .01
