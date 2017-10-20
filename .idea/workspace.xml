@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f64ce57-ea05-4035-836a-861702bd18a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stuff.py" afterPath="$PROJECT_DIR$/stuff.py" />
-    </list>
+    <list default="true" id="3f64ce57-ea05-4035-836a-861702bd18a0" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,11 +158,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stuff.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stuff.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stuff.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="177">
               <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Jaks_File_Parser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jaks_File_Parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jaks_file_parser_as_class.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jaks_file_parser_as_class.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -226,6 +243,7 @@
         <option value="$PROJECT_DIR$/specs.txt" />
         <option value="$PROJECT_DIR$/junk.py" />
         <option value="$PROJECT_DIR$/stuff.py" />
+        <option value="$PROJECT_DIR$/jaks_file_parser_as_class.py" />
       </list>
     </option>
   </component>
@@ -654,7 +672,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="33" width="1910" height="1014" extended-state="1" />
+    <frame x="0" y="33" width="1910" height="1014" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25783783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -688,46 +706,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7106">
-          <caret line="325" column="0" lean-forward="false" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-            <marker date="1508188625523" expanded="true" signature="1832:1910" ph="CREATE DATAB... walgreens" />
-            <marker date="1508188625523" expanded="true" signature="1872:1910" ph="/*!40100 DEF... " />
-            <marker date="1508188625523" expanded="true" signature="2208:2470" ph="CREATE TABLE... IF" />
-            <marker date="1508188625523" expanded="true" signature="2208:2544" ph="CREATE TABLE... ac_account" />
-            <marker date="1508188625523" expanded="true" signature="2605:2916" ph="CREATE TABLE... ac_balance" />
-            <marker date="1508188625523" expanded="true" signature="2974:3349" ph="CREATE TABLE... ac_card" />
-            <marker date="1508188625523" expanded="true" signature="3410:3871" ph="CREATE TABLE... ac_client" />
-            <marker date="1508188625523" expanded="true" signature="3930:4668" ph="CREATE TABLE... tp_trans" />
-            <marker date="1508188625523" expanded="true" signature="4736:5130" ph="CREATE TABLE... activity" />
-            <marker date="1508188625523" expanded="true" signature="5060:5130" ph="CREATE TABLE... activity" />
-            <marker date="1508188625523" expanded="true" signature="8395:8419" ph="truncate tab... " />
-            <marker date="1508188625523" expanded="true" signature="8447:8472" ph="truncate tab... " />
-            <marker date="1508188625523" expanded="true" signature="8500:8525" ph="truncate tab... " />
-            <marker date="1508188625523" expanded="true" signature="8553:8575" ph="truncate tab... " />
-            <marker date="1508188625523" expanded="true" signature="8603:8626" ph="truncate tab... " />
-            <marker date="1508188625523" expanded="true" signature="8654:8677" ph="truncate tab... " />
-            <marker date="1508188625523" expanded="true" signature="9166:9314" ph="INSERT INTO ac_client... " />
-            <marker date="1508188625523" expanded="true" signature="9942:10043" ph="INSERT INTO ac_balance... " />
-            <marker date="1508188625523" expanded="true" signature="10317:10430" ph="INSERT INTO ac_account... " />
-            <marker date="1508188625523" expanded="true" signature="11481:11629" ph="INSERT INTO ac_card... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_first_names.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <element signature="e#190#199#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4994">
@@ -1213,6 +1191,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jaks_File_Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jaks_file_parser_as_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
